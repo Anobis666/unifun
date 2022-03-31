@@ -1,0 +1,14 @@
+<div class="general">
+    <p>
+        <mat-toolbar>
+            <span>Music</span>
+
+        </mat-toolbar>
+    </p>
+    <div class="search-container">
+        <uni-search-bar (searchQuery)="searchSong($event)"></uni-search-bar>
+    </div>
+    <div>
+        <uni-card [music]="music"></uni-card>
+    </div>
+</div>

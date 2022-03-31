@@ -1,0 +1,19 @@
+
+<mat-toolbar display="center" class="header">
+  <div><img src="../../../../assets/images/logo/logo2.jpg" alt="logo"><img></div>
+</mat-toolbar>
+<mat-toolbar class="navbar">
+  <div id="container">
+    <h2>Enjoy Your Time!<span>{{sectionTitle}}</span></h2>
+  </div>
+  <div id="container2">
+    <span><a (click)="navigateBooks()">Library</a></span>
+    <span><a (click)="navigateMovies()">Cinema</a></span>
+    <span><a  (click)="navigateMusic()">JukeBox</a></span>
+    <span><a  (click)="navigateTvSeries()">Shows</a></span>
+    <span><a  (click)="navigateHomePage()">My home</a></span>
+    <span *ngIf="loggato" id="logout"><a href="" (click)="logout()">Logout</a></span>
+
+    <button><img src="../../../../assets/images/logo/doggo.jpg" alt="profile picture"></button>
+  </div>
+</mat-toolbar>

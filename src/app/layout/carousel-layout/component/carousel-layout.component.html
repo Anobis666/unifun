@@ -1,0 +1,104 @@
+<div class="container movies">
+
+
+
+    <div class="content-section implementation carousel-demo mt-5">
+        <h1>MOVIES</h1>
+        <div class="card">
+            <p-carousel [value]="movieImages" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1"
+                [circular]="true" [autoplayInterval]="0" [responsiveOptions]="responsiveOptions">
+                <ng-template let-image pTemplate="item">
+                    <div class="item card" style="width:100%; text-align:center;">
+                        <img src="{{image.picture}}" class="card-img" alt="..." style="height:400px; width:300px">
+                        <div class="card-body">
+                            <h5 class="card-title">{{image.title}}</h5>
+                            <!--p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>-->
+                            <a (click)="navigateMovies()" class="btn btn-primary">more details</a>
+                        </div>
+                    </div>
+                </ng-template>
+            </p-carousel>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container tv-series">
+
+
+    <div class="content-section implementation carousel-demo mt-5">
+        <h1>TV-SERIES</h1>
+
+        <div class="card">
+            <p-carousel [value]="seriesImages" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1"
+                [circular]="true" [autoplayInterval]="0" [responsiveOptions]="responsiveOptions">
+                <ng-template let-image pTemplate="item">
+                    <div class="item card" style="width:100%; text-align:center;">
+                        <img src="{{image.picture}}" class="card-img" alt="..." style="height:400px; width:300px">
+                        <div class="card-body">
+                            <h5 class="card-title">{{image.title}}</h5>
+                            <!--p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>-->
+                            <a (click)="navigateTvSeries()" class="btn btn-primary">more details</a>
+                        </div>
+                    </div>
+                </ng-template>
+            </p-carousel>
+        </div>
+    </div>
+</div>
+
+<div class="container books">
+
+
+    <div class="content-section implementation carousel-demo mt-5">
+        <h1>BOOKS</h1>
+
+        <div class="card">
+            <p-carousel [value]="bookImages" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1"
+                [circular]="true" [autoplayInterval]="0" [responsiveOptions]="responsiveOptions">
+                <ng-template let-image pTemplate="item">
+                    <div class="item card" style="width:100%; text-align:center;">
+                        <img src="{{image.picture}}" class="card-img" alt="..." style="height:400px; width:300px">
+                        <div class="card-body">
+                            <h5 class="card-title">{{image.title}}</h5>
+                            <!--p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>-->
+                            <a (click)="navigateBooks()" class="btn btn-primary">more details</a>
+                        </div>
+                    </div>
+                </ng-template>
+            </p-carousel>
+        </div>
+    </div>
+</div>
+
+<div class="container music">
+
+
+    <div class="content-section implementation carousel-demo mt-5">
+        <h1>MUSIC</h1>
+        <div class="card">
+            <p-carousel [value]="musicImages" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1"
+                [circular]="true" [autoplayInterval]="0" [responsiveOptions]="responsiveOptions">
+                <ng-template let-image pTemplate="item">
+                    <div class="item card" style="width:100%; text-align:center;">
+                        <img src="{{image.picture}}" class="card-img" alt="..." style="height:400px; width:300px">
+                        <div class="card-body">
+                            <h5 class="card-title">{{image.title}}</h5>
+                            <!--p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>-->
+                            <a (click)="navigateMusic()" class="btn btn-primary">more details</a>
+                        </div>
+                    </div>
+                </ng-template>
+            </p-carousel>
+        </div>
+    </div>
+</div>

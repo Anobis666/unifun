@@ -1,0 +1,16 @@
+<div class="uni-file-uploader__container">
+    <div class="uni-file-uploader__input__container">
+        <!-- <mat-form-field appearance="fill">
+            <input matInput type="text" (click)="fileUpload.click()"/>
+        </mat-form-field> -->
+
+        <input hidden
+            type="file" [formControl]="formControl" #fileUpload id="fileUpload" name="fileUpload" accept="image/*" 
+            (change)="onFileSelected($event)"/>
+        <button (onButtonClicked)="fileUpload.click()"
+            ></button>
+        <img *ngIf="imageSelected" src="{{imageSelected}}" alt="">
+    </div>
+</div>
+
+    

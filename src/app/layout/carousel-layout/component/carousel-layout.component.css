@@ -1,0 +1,10 @@
+.card-body a {
+  background-color: red;
+}
+
+.card-img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+/*# sourceMappingURL=carousel-layout.component.css.map */

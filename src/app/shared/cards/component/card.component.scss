@@ -1,0 +1,97 @@
+
+:host {
+    mat-card {
+    
+        width: 300px;
+        text-align: center;
+        margin: 20px;
+        background-color: #e1e1e1;
+
+        ::ng-deep .mat-card-header-text{
+            margin: 0!important;
+        }
+
+        ::ng-deep .mat-card-content{
+            margin-bottom: 0!important;
+        }
+        
+        .card__image {
+            align-self: center;
+            max-width: 100%;
+            height: 150px;
+            object-fit: cover;
+            
+        }
+        .card-details {
+            text-align: left;
+            margin: auto;
+        }
+        mat-card-content {
+            margin-top: 10px;
+        }
+        mat-card-actions {
+            text-align: right;
+            margin-bottom: 0!important;
+            width: 100%;
+            display: none;
+        
+            
+        }
+        p {
+            margin: 0px;
+        }
+        h4 {
+            font-weight: 300px;
+        }
+        mat-card-header {
+            
+            height: 25%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: #0000004a;
+            padding-top: 25px;
+            border-radius: 50px;
+            margin: 0!important;
+            
+        }
+        
+        .icon-actions {
+            padding-top: 1rem;
+            
+            mat-icon {
+                color: #fff;
+                height: 50px;
+                width: 50px;
+                font-size: 30px;
+            }
+        }
+        .mat-flat-button.mat-primary,
+        .mat-raised-button.mat-primary,
+        .mat-fab.mat-primary,
+        .mat-mini-fab.mat-primary {
+            background-color: #000000de;
+        }
+        .mat-button.mat-primary,
+        .mat-icon-button.mat-primary,
+        .mat-stroked-button.mat-primary {
+            color: #bb1818de;
+        }
+    
+    
+        
+    } 
+    
+    .card__container{
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    
+    .audioControls{
+        max-width: 100%;
+    }
+    
+    
+}

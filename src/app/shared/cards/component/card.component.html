@@ -1,0 +1,80 @@
+<!-- <div class="card__container">
+    <mat-card *ngFor="let music of music?.results; let index=index">
+        <mat-card-header>
+            <img class="card__image" [src]="music.artworkUrl100">
+            <div class="icon-actions">
+                <mat-icon onclick="">favorite</mat-icon>
+                <mat-icon>share</mat-icon>
+                <mat-icon>turned_in</mat-icon>
+                <mat-icon>highlight_off</mat-icon>
+
+        </div>
+    </mat-card-header>
+    <img mat-card-image [src]="music.artworkUrl100">
+    <mat-card-content>
+        <audio controls [id]="index">
+            <source [src]="music.previewUrl" type="audio/ogg">
+            <source [src]="music.previewUrl" type="audio/mpeg">
+        </audio>
+        
+        <div class="card-details">
+            <h4>{{ music.trackname }}</h4>
+            <p>Artist: {{music.artistName}} </p>
+            <p>Album: {{ music.collectionName }} </p>
+            <p>Country: {{ music.country }} </p>
+            <p>Track No: {{ music.trackNumber }} </p>
+            <p>Genra: {{ music.primaryGenreName }} </p>
+            
+            
+        </div>
+    </mat-card-content>
+    <mat-card-actions>
+        <button #stopBtn mat-button color="primary" (click)="stopSong(music)">STOP</button>
+        <button #playBtn mat-flat-button="primary" (click)="playSong(music)">PLAY</button>
+    </mat-card-actions>
+</mat-card> -->
+
+<div class="card__container">
+    <mat-card *ngFor="let music of music?.results; let index=index">
+        <mat-card-header>
+            <img class="card__image" [src]="music.artworkUrl100">
+            
+            <div class="icon-actions">
+                <mat-icon>favorite</mat-icon>
+                <mat-icon>share</mat-icon>
+                <mat-icon>turned_in</mat-icon>
+                <mat-icon>highlight_off</mat-icon>
+
+            </div>
+        </mat-card-header>
+
+        <mat-card-content>
+
+            <audio class="audioControls" controls [id]="index">
+                <source [src]="music.previewUrl" type="audio/ogg">
+                <source [src]="music.previewUrl" type="audio/mpeg">
+            </audio>
+            
+            <video width="260" height="240" controls [id]="index">
+                <source [src]="music.previewUrl" type="video/mp4">
+                <source [src]="music.previewUrl" type="video/ogg">
+              Your browser does not support the video tag.
+              </video>
+            
+            <div class="card-details">
+                <h4>Name:{{ music.trackname }}</h4>
+                <p>Artist: {{music.artistName}} </p>
+                <p>Album: {{ music.collectionName }} </p>
+                <p>Country: {{ music.country }} </p>
+                <p>Track No: {{ music.trackNumber }} </p>
+                <p>Genra: {{ music.primaryGenreName }} </p>
+
+
+            </div>
+        </mat-card-content>
+        <mat-card-actions class="players">
+            <button #stopBtn mat-button color="primary" (click)="stopSong(music)">STOP</button>
+            <button #playBtn mat-flat-button="primary" (click)="playSong(music)">PLAY</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

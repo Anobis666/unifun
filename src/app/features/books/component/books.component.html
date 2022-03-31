@@ -1,0 +1,55 @@
+<div class="base-container">
+  <div class="container1 container pt-5">
+    <form [formGroup]="booksForm">
+      <div class="form-group year">
+        <label>Year</label>
+        <input type="text" class="form-control" placeholder="Insert year" name="year" formControlName="year">
+      </div>
+      <div class="form-group">
+        <label>Author</label>
+        <input type="text" class="form-control" placeholder="Insert author" name="author" formControlName="author">
+      </div>
+      <div class="form-group">
+        <label>Title</label>
+        <input type="text" class="form-control" placeholder="Insert Title" name="title" formControlName="title">
+      </div>
+      <div class="form-group">
+        <label>Description</label>
+        <input type="textbox" class="form-control" placeholder="Insert description" name="description"
+          formControlName="description">
+      </div>
+      <div class="form-group">
+        <input type="file" formControlName="file" #fileUpload id="fileUpload" name="fileUpload" accept="image/*"
+          (change)="onFileSelected($event)" />
+      </div>
+      <button type="submit" id="bookSubmit" (click)="postBooks()" [disabled]="booksForm.invalid">Upload book</button>
+    </form>
+  </div>
+
+
+
+  <div class="container2 container">
+
+    <div class="row justify-content-center">
+
+      <div class="card col-xl-3 col-md-6 col-12 books__card" *ngFor="let book of allBooks">
+        <button type="submit" class="close text-right" aria-label="Close" (click)="deleteBooks(book.book_id)">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <img class="card-img-top books__card__img" src="{{book.image_url}}" alt="Card image cap">
+        <div class="containerOverlay">
+          <div class="overlay">{{book.description}}</div>
+        </div>
+        <div class="card-body">
+
+          <button type="button" (click)="showDialog(book)" icon="pi pi-info-circle" label="Show"
+            class="btn btn-primary card__button_update">Update</button>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+</div>

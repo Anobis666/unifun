@@ -1,0 +1,37 @@
+<div class="container1 container pt-5">
+    <form [formGroup]="tvSeriesForm" (ngSubmit)="onSubmitTvSerie()">
+        <div class="modal__container__img">
+            <img class="modal__img" [src]="tvSerieCover" alt="">
+        </div>
+
+        <div class="form-group">
+            <input type="file" #fileUpload id="fileUpload" name="fileUpload" accept="image/*" formControlName="file"
+                (change)="onFileSelected($event)" />
+        </div>
+
+
+
+        <div class="form-group year">
+            <label>Year</label>
+            <input type="text" class="form-control" placeholder="Insert year" name="year" formControlName="year">
+        </div>
+        <div class="form-group">
+            <label>Author</label>
+            <input type="text" class="form-control" placeholder="Insert actor" name="actor" formControlName="actor">
+        </div>
+        <div class="form-group">
+            <label>Title</label>
+            <input type="text" class="form-control" placeholder="Insert Title" name="title" formControlName="title">
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <input type="textbox" class="form-control" placeholder="Insert description" name="description"
+                formControlName="description">
+        </div>
+        <!-- <div class="form-group">
+            <input type="file" formControlName="file" #fileUpload id="fileUpload" name="fileUpload" accept="image/*"
+                (change)="onFileSelected($event)" />
+        </div> -->
+        <button type="submit" id="tvSerieSubmit">Update Tv-serie</button>
+    </form>
+</div>

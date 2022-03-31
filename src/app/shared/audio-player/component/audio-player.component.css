@@ -1,0 +1,31 @@
+.general {
+  background-color: #4d13d3;
+  position: static;
+}
+
+.search-container {
+  margin: 20px auto;
+  width: 100%;
+  text-align: center;
+  border-color: #000000;
+}
+
+.card-container {
+  margin: 20px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.mat-typography {
+  background-color: #000000;
+}
+
+.mat-toolbar {
+  background-color: #b33838de;
+}
+
+.mat-toolbar span {
+  color: #ffffff;
+  position: relative;
+}
+/*# sourceMappingURL=audio-player.component.css.map */

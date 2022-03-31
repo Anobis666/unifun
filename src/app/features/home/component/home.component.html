@@ -1,0 +1,12 @@
+<div id="home-container">
+<ng-container *ngIf="!loading; else loadingBlock">
+    <uni-carousel-layout 
+        [bookImages]="bookCarouselItems"
+        [movieImages]="movieCarouselItems"
+        [musicImages]="musicCarouselItems"
+        [seriesImages]="tvSeriesCarouselItems"
+    ></uni-carousel-layout>
+</ng-container>
+
+<ng-template #loadingBlock>Loading...</ng-template>
+</div>

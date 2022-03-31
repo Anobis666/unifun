@@ -1,0 +1,115 @@
+
+
+
+
+.base-container{
+    background: linear-gradient(rgb(202, 132, 230),rgb(137, 65, 170),gray);
+  }
+  
+  .container1
+  {
+    width:500px
+  }
+  
+  .container1 input{
+    height: 50px;
+  }
+  
+  #tvSeriesSubmit{
+    background-color: #c10504;
+    color: white;
+    max-width: 200px;
+    padding: 10px;
+  }
+  
+  .container2{
+    display: grid;
+   
+    max-width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+  }
+  
+  .container2 img{
+    height: 400px;
+    max-width: 300px;
+  }
+  
+  .card{
+    max-width: 300px; 
+  }
+  
+  .card{
+    margin: 2em;
+  }
+  
+  // #close{
+  //   position: absolute;
+  //     top: -15px;
+  //     right: -13px;
+  //     height: 20px;
+  //     width:20px;
+  //     background: #fff;
+  //     border-radius: 50%;
+  //     cursor: pointer;
+  // }
+  
+  
+  
+  * {box-sizing: border-box}
+  
+  /* Container needed to position the overlay. Adjust the width as needed */
+  
+  .containerOverlay{
+    position: relative;
+  }
+    
+  
+  
+  /* The overlay effect - lays on top of the container and over the image */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* When you mouse over the container, fade in the overlay title */
+  .containerOverlay:hover .overlay {
+    opacity: 1;
+  }
+
+  .card__button_update{
+    background-color:#c10504;
+  }
+  
+  .tv-series__card{
+    max-width: 200px;
+    max-height:300px
+  }
+  
+  .tv-series__card__img{
+    height: 230px!important
+  }
+  
+  button[disabled]{
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  
+  @media (max-width: 584px){
+    .container{
+      max-width: 100%;
+    }
+  }
+  
+  

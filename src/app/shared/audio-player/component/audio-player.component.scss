@@ -1,0 +1,26 @@
+.general {
+    background: linear-gradient(rgb(121, 90, 206),rgb(77, 19, 211),gray);
+    position:static;
+    
+
+}
+.search-container {
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+    border-color: #000000;
+}
+
+
+
+.mat-typography {
+    background-color: #000000;
+}
+
+.mat-toolbar {
+    background-color: #b33838de;
+    span {
+        color: #ffffff;
+        position: relative;
+    }
+} 

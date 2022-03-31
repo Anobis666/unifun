@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACR,OAAO,EAAE,IAAI;CACd",
+    "sources": [
+        "file-uploader.component.scss"
+    ],
+    "names": [],
+    "file": "file-uploader.component.css"
+}

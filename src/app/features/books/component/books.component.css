@@ -1,0 +1,80 @@
+.base-container {
+  background: -webkit-gradient(linear, left top, left bottom, from(#2d6569), color-stop(#1096a0), to(gray));
+  background: linear-gradient(#2d6569, #1096a0, gray);
+}
+
+.container1 {
+  width: 500px;
+}
+
+.container1 input {
+  height: 50px;
+}
+
+#bookSubmit {
+  background-color: #c10504;
+  color: white;
+  max-width: 200px;
+  padding: 10px;
+}
+
+.container2 {
+  display: -ms-grid;
+  display: grid;
+  max-width: 100%;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+
+.container2 img {
+  height: 400px;
+  max-width: 300px;
+}
+
+.card {
+  max-width: 300px;
+}
+
+.card {
+  margin: 2em;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.containerOverlay {
+  position: relative;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: black;
+  background: rgba(0, 0, 0, 0.5);
+  /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.containerOverlay:hover .overlay {
+  opacity: 1;
+}
+
+@media (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=books.component.css.map */

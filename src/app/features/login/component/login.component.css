@@ -1,0 +1,103 @@
+body {
+  background-image: url(../../../../assets/images/login-background.jpg);
+}
+
+html {
+  margin: 100px 0;
+  padding: 0;
+  height: 100%;
+}
+
+.user_card {
+  min-height: 400px;
+  width: 350px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: black;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  border: solid white 12px;
+}
+
+.brand_logo_container {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  top: -75px;
+  border-radius: 50%;
+  background: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.brand_logo {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid;
+}
+
+.form_container {
+  margin-top: 100px;
+}
+
+.login_btn {
+  width: 100%;
+  background: #c10504 !important;
+  color: white !important;
+}
+
+.login_btn:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: 0px !important;
+}
+
+.login_container {
+  padding: 0 2rem;
+}
+
+.input-group-text {
+  background: #c10504 !important;
+  color: white !important;
+  border: 0 !important;
+  border-radius: 0.25rem 0 0 0.25rem !important;
+}
+
+.input_user,
+.input_pass:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: 0px !important;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #c0392b !important;
+}
+
+#rememberMe {
+  color: white;
+}
+
+.links p {
+  color: white;
+}
+
+.links a {
+  color: #c10504;
+}
+/*# sourceMappingURL=login.component.css.map */
